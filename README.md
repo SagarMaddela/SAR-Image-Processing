@@ -32,7 +32,7 @@ SAR-Image-Processing/
   * **Sequential (CPU)**: Baseline OpenCV implementation in `main.cpp`.
   * **Sequential (CPU)**: Baseline Manual pixel implementation in `pixel_imp.cpp`.
   * **OpenMP (Multi-threaded CPU)**: Parallelized version in `openmp_implementation.cpp`.
-  * **CUDA (GPU-accelerated)**: High-performance version in `https://www.kaggle.com/code/venkatasagarmaddela/hpc-project/edit`.
+  * **CUDA (GPU-accelerated)**: High-performance version in `https://www.kaggle.com/code/venkatasagarmaddela/hpc-project`.
 * **Performance Analysis**:
 
   * Execution time measurements for each function.
