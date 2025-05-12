@@ -2,8 +2,6 @@
 
 This project implements a comprehensive pipeline for Synthetic Aperture Radar (SAR) image processing, focusing on performance comparisons between sequential (CPU), OpenMP (multi-threaded), and CUDA (GPU-accelerated) implementations. It includes detailed profiling, execution time analysis, and visualization tools to assess the efficiency of each approach.
 
-## 📁 Repository Structure
-
 ```
 SAR-Image-Processing/
 ├── images/
@@ -31,10 +29,10 @@ SAR-Image-Processing/
 
 * **Image Processing Pipeline**: Includes grayscale conversion, rotation, flipping, HSV conversion, brightness adjustment, clipping, histogram equalization, Wiener filtering, and Gaussian filtering.
 * **Multiple Implementations**:
-
-  * **Sequential (CPU)**: Baseline implementation in `main.cpp`.
+  * **Sequential (CPU)**: Baseline OpenCV implementation in `main.cpp`.
+  * **Sequential (CPU)**: Baseline Manual pixel implementation in `pixel_imp.cpp`.
   * **OpenMP (Multi-threaded CPU)**: Parallelized version in `openmp_implementation.cpp`.
-  * **CUDA (GPU-accelerated)**: High-performance version in `pixel_imp.cpp`.
+  * **CUDA (GPU-accelerated)**: High-performance version in `https://www.kaggle.com/code/venkatasagarmaddela/hpc-project/edit`.
 * **Performance Analysis**:
 
   * Execution time measurements for each function.
@@ -53,25 +51,31 @@ SAR-Image-Processing/
 2. **Install Dependencies**:
 
    * Ensure you have OpenCV installed for image processing.
-   * For CUDA implementation, ensure CUDA toolkit is installed.
+   * For CUDA implementation, ensure CUDA toolkit is installed or Use Kaggle Notebook or Use Google Colab.
    * Python 3 with `matplotlib` and `pandas` for plotting scripts.
 
 3. **Build the Project**:
 
-   * **Sequential Version**:
+   * **Sequential OpenCV Version**:
 
      ```bash
-     g++ main.cpp -o main -fopenmp `pkg-config --cflags --libs opencv4`
+     g++ main.cpp -o main `pkg-config --cflags --libs opencv4`
+     ```
+
+  * **Sequential Manual Pixel Version**:
+
+     ```bash
+     g++ pixel_imp.cpp -o pixel_imp `pkg-config --cflags --libs opencv4`
      ```
    * **OpenMP Version**:
 
      ```bash
-     g++ openmp_implementation.cpp -o openmp -fopenmp `pkg-config --cflags --libs opencv4`
+     g++ -fopenmp openmp_implementation.cpp -o openmp `pkg-config --cflags --libs opencv4`
      ```
    * **CUDA Version**:
 
      ```bash
-     nvcc pixel_imp.cpp -o cuda `pkg-config --cflags --libs opencv4`
+     !nvcc final_cuda_implementation -o cuda `pkg-config --cflags --libs opencv4`
      ```
 
 ## 🧪 Usage
@@ -118,10 +122,4 @@ SAR-Image-Processing/
 
   * `cuda_execution_times.csv`, `openmp_times.csv`, `pixel_implementation.csv`, `image_size_vs_time.csv`: Raw execution time data for further analysis.
 
-## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-For more information and updates, visit the [GitHub Repository](https://github.com/SagarMaddela/SAR-Image-Processing).
