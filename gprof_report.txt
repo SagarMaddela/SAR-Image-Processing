@@ -1,0 +1,473 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 36.36      0.08     0.08        1    80.00   116.80  manualGaussianFilter(cv::Mat const&, int, double)
+ 13.64      0.11     0.03 31024400     0.00     0.00  unsigned char const& cv::Mat::at<unsigned char>(int, int) const
+  9.09      0.13     0.02  7167008     0.00     0.00  unsigned char& cv::Mat::at<unsigned char>(int, int)
+  9.09      0.15     0.02        1    20.00    25.46  manualGrayscale(cv::Mat const&)
+  9.09      0.17     0.02        1    20.00    47.78  manualWienerFilter(cv::Mat const&, int)
+  4.55      0.18     0.01 24847225     0.00     0.00  double& cv::Mat::at<double>(int, int)
+  4.55      0.19     0.01  1995920     0.00     0.00  cv::Matx<double, 4, 1>::Matx()
+  4.55      0.20     0.01  1043280     0.00     0.00  cv::Matx<unsigned char, 3, 1>::Matx(unsigned char, unsigned char, unsigned char)
+  4.55      0.21     0.01   997960     0.00     0.00  unsigned char cv::saturate_cast<unsigned char>(float)
+  2.27      0.21     0.01  2045320     0.00     0.00  cv::Vec<unsigned char, 3> const& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) const
+  2.27      0.22     0.01   997960     0.00     0.00  cv::Rect_<int>::Rect_(int, int, int, int)
+  0.00      0.22     0.00  3991840     0.00     0.00  cv::Vec<double, 4>::operator[](int)
+  0.00      0.22     0.00  3129840     0.00     0.00  cv::Vec<unsigned char, 3>::operator[](int)
+  0.00      0.22     0.00  2993893     0.00     0.00  cv::_InputArray::init(int, void const*)
+  0.00      0.22     0.00  2993891     0.00     0.00  cv::_InputArray::~_InputArray()
+  0.00      0.22     0.00  2993891     0.00     0.00  cv::Size_<int>::Size_()
+  0.00      0.22     0.00  2045320     0.00     0.00  cv::Vec<unsigned char, 3>& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int)
+  0.00      0.22     0.00  2041240     0.00     0.00  unsigned char cv::saturate_cast<unsigned char>(int)
+  0.00      0.22     0.00  2004080     0.00     0.00  cv::Mat::channels() const
+  0.00      0.22     0.00  1995922     0.00     0.00  cv::_InputArray::_InputArray()
+  0.00      0.22     0.00  1995922     0.00     0.00  cv::_OutputArray::~_OutputArray()
+  0.00      0.22     0.00  1995921     0.00     0.00  cv::Size_<int>::Size_(int, int)
+  0.00      0.22     0.00  1995920     0.00     0.00  cv::_InputArray::init(int, void const*, cv::Size_<int>)
+  0.00      0.22     0.00  1995920     0.00     0.00  cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&)
+  0.00      0.22     0.00  1995920     0.00     0.00  cv::Vec<double, 4>::Vec()
+  0.00      0.22     0.00  1995920     0.00     0.00  cv::Size_<int>::operator=(cv::Size_<int> const&)
+  0.00      0.22     0.00  1995920     0.00     0.00  cv::Scalar_<double>::Scalar_()
+  0.00      0.22     0.00  1043280     0.00     0.00  cv::Vec<unsigned char, 3>::Vec(cv::Vec<unsigned char, 3> const&)
+  0.00      0.22     0.00  1043280     0.00     0.00  cv::Vec<unsigned char, 3>::Vec(unsigned char, unsigned char, unsigned char)
+  0.00      0.22     0.00  1043280     0.00     0.00  cv::Matx<unsigned char, 3, 1>::Matx(unsigned char const*)
+  0.00      0.22     0.00   997969     0.00     0.00  cv::_InputArray::_InputArray(cv::Mat const&)
+  0.00      0.22     0.00   997960     0.00     0.00  cvRound(float)
+  0.00      0.22     0.00   997960     0.00     0.00  float& cv::Mat::at<float>(int, int)
+  0.00      0.22     0.00   997960     0.00     0.00  cv::Mat::operator()(cv::Rect_<int> const&) const
+  0.00      0.22     0.00   997960     0.00     0.00  float const& std::max<float>(float const&, float const&)
+  0.00      0.22     0.00       10     0.00     0.00  bool __gnu_cxx::__is_null_pointer<char const>(char const*)
+  0.00      0.22     0.00       10     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      0.22     0.00       10     0.00     0.00  void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  0.00      0.22     0.00       10     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00      0.22     0.00       10     0.00     0.00  std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag)
+  0.00      0.22     0.00       10     0.00     0.00  std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&)
+  0.00      0.22     0.00       10     0.00     0.00  std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*)
+  0.00      0.22     0.00        3     0.00     0.00  cv::Mat::type() const
+  0.00      0.22     0.00        2     0.00     0.00  cv::_OutputArray::_OutputArray(cv::Mat&)
+  0.00      0.22     0.00        1     0.00     2.45  manualClip(cv::Mat const&)
+  0.00      0.22     0.00        1     0.00     3.92  manualBrightness(cv::Mat const&, int)
+  0.00      0.22     0.00        1     0.00     4.73  manualEqualizeHist(cv::Mat const&)
+  0.00      0.22     0.00        1     0.00     3.92  manualFlipVertical(cv::Mat const&)
+  0.00      0.22     0.00        1     0.00     3.92  manualRotate90Clockwise(cv::Mat const&)
+  0.00      0.22     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.22     0.00        1     0.00    11.01  manualHSV(cv::Mat const&)
+  0.00      0.22     0.00        1     0.00     0.00  cv::operator/=(cv::Mat&, double const&)
+  0.00      0.22     0.00        1     0.00     0.00  cv::MatSize::operator()() const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 4.55% of 0.22 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.22                 main [1]
+                0.08    0.04       1/1           manualGaussianFilter(cv::Mat const&, int, double) [2]
+                0.02    0.03       1/1           manualWienerFilter(cv::Mat const&, int) [3]
+                0.02    0.01       1/1           manualGrayscale(cv::Mat const&) [5]
+                0.00    0.01       1/1           manualHSV(cv::Mat const&) [7]
+                0.00    0.00       1/1           manualEqualizeHist(cv::Mat const&) [17]
+                0.00    0.00       1/1           manualRotate90Clockwise(cv::Mat const&) [20]
+                0.00    0.00       1/1           manualFlipVertical(cv::Mat const&) [19]
+                0.00    0.00       1/1           manualBrightness(cv::Mat const&, int) [18]
+                0.00    0.00       1/1           manualClip(cv::Mat const&) [21]
+                0.00    0.00      10/10          std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [52]
+                0.00    0.00       9/997969      cv::_InputArray::_InputArray(cv::Mat const&) [44]
+                0.00    0.00       9/2993891     cv::_InputArray::~_InputArray() [31]
+-----------------------------------------------
+                0.08    0.04       1/1           main [1]
+[2]     53.1    0.08    0.04       1         manualGaussianFilter(cv::Mat const&, int, double) [2]
+                0.02    0.00 24847200/31024400     unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+                0.01    0.00 24847225/24847225     double& cv::Mat::at<double>(int, int) [8]
+                0.00    0.00  993888/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00       1/1           cv::operator/=(cv::Mat&, double const&) [59]
+-----------------------------------------------
+                0.02    0.03       1/1           main [1]
+[3]     21.7    0.02    0.03       1         manualWienerFilter(cv::Mat const&, int) [3]
+                0.00    0.01 1995920/1995920     cv::Scalar_<double>::Scalar_() [11]
+                0.01    0.00  997960/997960      unsigned char cv::saturate_cast<unsigned char>(float) [14]
+                0.01    0.00  997960/997960      cv::Rect_<int>::Rect_(int, int, int, int) [16]
+                0.00    0.00  997960/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00 3991840/3991840     cv::Vec<double, 4>::operator[](int) [28]
+                0.00    0.00 1995921/1995922     cv::_OutputArray::~_OutputArray() [37]
+                0.00    0.00 1995920/1995920     cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&) [40]
+                0.00    0.00  997960/997960      cv::Mat::operator()(cv::Rect_<int> const&) const [47]
+                0.00    0.00  997960/997969      cv::_InputArray::_InputArray(cv::Mat const&) [44]
+                0.00    0.00  997960/2993891     cv::_InputArray::~_InputArray() [31]
+                0.00    0.00  997960/997960      float& cv::Mat::at<float>(int, int) [46]
+                0.00    0.00  997960/997960      float const& std::max<float>(float const&, float const&) [48]
+                0.00    0.00       1/2           cv::_OutputArray::_OutputArray(cv::Mat&) [57]
+-----------------------------------------------
+                0.00    0.00 1043280/31024400     manualRotate90Clockwise(cv::Mat const&) [20]
+                0.00    0.00 1043280/31024400     manualFlipVertical(cv::Mat const&) [19]
+                0.00    0.00 1043280/31024400     manualHSV(cv::Mat const&) [7]
+                0.00    0.00 1043280/31024400     manualBrightness(cv::Mat const&, int) [18]
+                0.00    0.00 2004080/31024400     manualEqualizeHist(cv::Mat const&) [17]
+                0.02    0.00 24847200/31024400     manualGaussianFilter(cv::Mat const&, int, double) [2]
+[4]     13.6    0.03    0.00 31024400         unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+-----------------------------------------------
+                0.02    0.01       1/1           main [1]
+[5]     11.6    0.02    0.01       1         manualGrayscale(cv::Mat const&) [5]
+                0.00    0.00 1043280/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00 1043280/2045320     cv::Vec<unsigned char, 3> const& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) const [15]
+                0.00    0.00 3129840/3129840     cv::Vec<unsigned char, 3>::operator[](int) [29]
+                0.00    0.00 1043280/1043280     cv::Vec<unsigned char, 3>::Vec(cv::Vec<unsigned char, 3> const&) [42]
+-----------------------------------------------
+                0.00    0.00  993888/7167008     manualGaussianFilter(cv::Mat const&, int, double) [2]
+                0.00    0.00  997960/7167008     manualWienerFilter(cv::Mat const&, int) [3]
+                0.00    0.00 1002040/7167008     manualEqualizeHist(cv::Mat const&) [17]
+                0.00    0.00 1043280/7167008     manualGrayscale(cv::Mat const&) [5]
+                0.00    0.00 1043280/7167008     manualRotate90Clockwise(cv::Mat const&) [20]
+                0.00    0.00 1043280/7167008     manualFlipVertical(cv::Mat const&) [19]
+                0.00    0.00 1043280/7167008     manualBrightness(cv::Mat const&, int) [18]
+[6]      9.1    0.02    0.00 7167008         unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[7]      5.0    0.00    0.01       1         manualHSV(cv::Mat const&) [7]
+                0.00    0.01 1043280/1043280     cv::Vec<unsigned char, 3>::Vec(unsigned char, unsigned char, unsigned char) [12]
+                0.00    0.00 1043280/31024400     unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+                0.00    0.00 1043280/2045320     cv::Vec<unsigned char, 3>& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) [33]
+-----------------------------------------------
+                0.01    0.00 24847225/24847225     manualGaussianFilter(cv::Mat const&, int, double) [2]
+[8]      4.5    0.01    0.00 24847225         double& cv::Mat::at<double>(int, int) [8]
+-----------------------------------------------
+                0.00    0.01 1995920/1995920     cv::Scalar_<double>::Scalar_() [11]
+[9]      4.5    0.00    0.01 1995920         cv::Vec<double, 4>::Vec() [9]
+                0.01    0.00 1995920/1995920     cv::Matx<double, 4, 1>::Matx() [10]
+-----------------------------------------------
+                0.01    0.00 1995920/1995920     cv::Vec<double, 4>::Vec() [9]
+[10]     4.5    0.01    0.00 1995920         cv::Matx<double, 4, 1>::Matx() [10]
+-----------------------------------------------
+                0.00    0.01 1995920/1995920     manualWienerFilter(cv::Mat const&, int) [3]
+[11]     4.5    0.00    0.01 1995920         cv::Scalar_<double>::Scalar_() [11]
+                0.00    0.01 1995920/1995920     cv::Vec<double, 4>::Vec() [9]
+-----------------------------------------------
+                0.00    0.01 1043280/1043280     manualHSV(cv::Mat const&) [7]
+[12]     4.5    0.00    0.01 1043280         cv::Vec<unsigned char, 3>::Vec(unsigned char, unsigned char, unsigned char) [12]
+                0.01    0.00 1043280/1043280     cv::Matx<unsigned char, 3, 1>::Matx(unsigned char, unsigned char, unsigned char) [13]
+-----------------------------------------------
+                0.01    0.00 1043280/1043280     cv::Vec<unsigned char, 3>::Vec(unsigned char, unsigned char, unsigned char) [12]
+[13]     4.5    0.01    0.00 1043280         cv::Matx<unsigned char, 3, 1>::Matx(unsigned char, unsigned char, unsigned char) [13]
+-----------------------------------------------
+                0.01    0.00  997960/997960      manualWienerFilter(cv::Mat const&, int) [3]
+[14]     4.5    0.01    0.00  997960         unsigned char cv::saturate_cast<unsigned char>(float) [14]
+                0.00    0.00  997960/997960      cvRound(float) [45]
+                0.00    0.00  997960/2041240     unsigned char cv::saturate_cast<unsigned char>(int) [34]
+-----------------------------------------------
+                0.00    0.00 1002040/2045320     manualClip(cv::Mat const&) [21]
+                0.00    0.00 1043280/2045320     manualGrayscale(cv::Mat const&) [5]
+[15]     2.3    0.01    0.00 2045320         cv::Vec<unsigned char, 3> const& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) const [15]
+-----------------------------------------------
+                0.01    0.00  997960/997960      manualWienerFilter(cv::Mat const&, int) [3]
+[16]     2.3    0.01    0.00  997960         cv::Rect_<int>::Rect_(int, int, int, int) [16]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[17]     2.2    0.00    0.00       1         manualEqualizeHist(cv::Mat const&) [17]
+                0.00    0.00 1002040/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00 2004080/31024400     unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[18]     1.8    0.00    0.00       1         manualBrightness(cv::Mat const&, int) [18]
+                0.00    0.00 1043280/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00 1043280/31024400     unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+                0.00    0.00 1043280/2041240     unsigned char cv::saturate_cast<unsigned char>(int) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[19]     1.8    0.00    0.00       1         manualFlipVertical(cv::Mat const&) [19]
+                0.00    0.00 1043280/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00 1043280/31024400     unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+                0.00    0.00       1/3           cv::Mat::type() const [56]
+                0.00    0.00       1/1           cv::MatSize::operator()() const [60]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[20]     1.8    0.00    0.00       1         manualRotate90Clockwise(cv::Mat const&) [20]
+                0.00    0.00 1043280/7167008     unsigned char& cv::Mat::at<unsigned char>(int, int) [6]
+                0.00    0.00 1043280/31024400     unsigned char const& cv::Mat::at<unsigned char>(int, int) const [4]
+                0.00    0.00       1/3           cv::Mat::type() const [56]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[21]     1.1    0.00    0.00       1         manualClip(cv::Mat const&) [21]
+                0.00    0.00 1002040/2045320     cv::Vec<unsigned char, 3> const& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) const [15]
+                0.00    0.00 2004080/2004080     cv::Mat::channels() const [35]
+                0.00    0.00 1002040/2045320     cv::Vec<unsigned char, 3>& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) [33]
+                0.00    0.00       1/3           cv::Mat::type() const [56]
+-----------------------------------------------
+                0.00    0.00 3991840/3991840     manualWienerFilter(cv::Mat const&, int) [3]
+[28]     0.0    0.00    0.00 3991840         cv::Vec<double, 4>::operator[](int) [28]
+-----------------------------------------------
+                0.00    0.00 3129840/3129840     manualGrayscale(cv::Mat const&) [5]
+[29]     0.0    0.00    0.00 3129840         cv::Vec<unsigned char, 3>::operator[](int) [29]
+-----------------------------------------------
+                0.00    0.00       2/2993893     cv::_OutputArray::_OutputArray(cv::Mat&) [57]
+                0.00    0.00  997969/2993893     cv::_InputArray::_InputArray(cv::Mat const&) [44]
+                0.00    0.00 1995922/2993893     cv::_InputArray::_InputArray() [36]
+[30]     0.0    0.00    0.00 2993893         cv::_InputArray::init(int, void const*) [30]
+-----------------------------------------------
+                0.00    0.00       9/2993891     main [1]
+                0.00    0.00  997960/2993891     manualWienerFilter(cv::Mat const&, int) [3]
+                0.00    0.00 1995922/2993891     cv::_OutputArray::~_OutputArray() [37]
+[31]     0.0    0.00    0.00 2993891         cv::_InputArray::~_InputArray() [31]
+-----------------------------------------------
+                0.00    0.00  997969/2993891     cv::_InputArray::_InputArray(cv::Mat const&) [44]
+                0.00    0.00 1995922/2993891     cv::_InputArray::_InputArray() [36]
+[32]     0.0    0.00    0.00 2993891         cv::Size_<int>::Size_() [32]
+-----------------------------------------------
+                0.00    0.00 1002040/2045320     manualClip(cv::Mat const&) [21]
+                0.00    0.00 1043280/2045320     manualHSV(cv::Mat const&) [7]
+[33]     0.0    0.00    0.00 2045320         cv::Vec<unsigned char, 3>& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) [33]
+-----------------------------------------------
+                0.00    0.00  997960/2041240     unsigned char cv::saturate_cast<unsigned char>(float) [14]
+                0.00    0.00 1043280/2041240     manualBrightness(cv::Mat const&, int) [18]
+[34]     0.0    0.00    0.00 2041240         unsigned char cv::saturate_cast<unsigned char>(int) [34]
+-----------------------------------------------
+                0.00    0.00 2004080/2004080     manualClip(cv::Mat const&) [21]
+[35]     0.0    0.00    0.00 2004080         cv::Mat::channels() const [35]
+-----------------------------------------------
+                0.00    0.00       2/1995922     cv::_OutputArray::_OutputArray(cv::Mat&) [57]
+                0.00    0.00 1995920/1995922     cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&) [40]
+[36]     0.0    0.00    0.00 1995922         cv::_InputArray::_InputArray() [36]
+                0.00    0.00 1995922/2993891     cv::Size_<int>::Size_() [32]
+                0.00    0.00 1995922/2993893     cv::_InputArray::init(int, void const*) [30]
+-----------------------------------------------
+                0.00    0.00       1/1995922     cv::operator/=(cv::Mat&, double const&) [59]
+                0.00    0.00 1995921/1995922     manualWienerFilter(cv::Mat const&, int) [3]
+[37]     0.0    0.00    0.00 1995922         cv::_OutputArray::~_OutputArray() [37]
+                0.00    0.00 1995922/2993891     cv::_InputArray::~_InputArray() [31]
+-----------------------------------------------
+                0.00    0.00       1/1995921     cv::MatSize::operator()() const [60]
+                0.00    0.00 1995920/1995921     cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&) [40]
+[38]     0.0    0.00    0.00 1995921         cv::Size_<int>::Size_(int, int) [38]
+-----------------------------------------------
+                0.00    0.00 1995920/1995920     cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&) [40]
+[39]     0.0    0.00    0.00 1995920         cv::_InputArray::init(int, void const*, cv::Size_<int>) [39]
+                0.00    0.00 1995920/1995920     cv::Size_<int>::operator=(cv::Size_<int> const&) [41]
+-----------------------------------------------
+                0.00    0.00 1995920/1995920     manualWienerFilter(cv::Mat const&, int) [3]
+[40]     0.0    0.00    0.00 1995920         cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&) [40]
+                0.00    0.00 1995920/1995922     cv::_InputArray::_InputArray() [36]
+                0.00    0.00 1995920/1995921     cv::Size_<int>::Size_(int, int) [38]
+                0.00    0.00 1995920/1995920     cv::_InputArray::init(int, void const*, cv::Size_<int>) [39]
+-----------------------------------------------
+                0.00    0.00 1995920/1995920     cv::_InputArray::init(int, void const*, cv::Size_<int>) [39]
+[41]     0.0    0.00    0.00 1995920         cv::Size_<int>::operator=(cv::Size_<int> const&) [41]
+-----------------------------------------------
+                0.00    0.00 1043280/1043280     manualGrayscale(cv::Mat const&) [5]
+[42]     0.0    0.00    0.00 1043280         cv::Vec<unsigned char, 3>::Vec(cv::Vec<unsigned char, 3> const&) [42]
+                0.00    0.00 1043280/1043280     cv::Matx<unsigned char, 3, 1>::Matx(unsigned char const*) [43]
+-----------------------------------------------
+                0.00    0.00 1043280/1043280     cv::Vec<unsigned char, 3>::Vec(cv::Vec<unsigned char, 3> const&) [42]
+[43]     0.0    0.00    0.00 1043280         cv::Matx<unsigned char, 3, 1>::Matx(unsigned char const*) [43]
+-----------------------------------------------
+                0.00    0.00       9/997969      main [1]
+                0.00    0.00  997960/997969      manualWienerFilter(cv::Mat const&, int) [3]
+[44]     0.0    0.00    0.00  997969         cv::_InputArray::_InputArray(cv::Mat const&) [44]
+                0.00    0.00  997969/2993891     cv::Size_<int>::Size_() [32]
+                0.00    0.00  997969/2993893     cv::_InputArray::init(int, void const*) [30]
+-----------------------------------------------
+                0.00    0.00  997960/997960      unsigned char cv::saturate_cast<unsigned char>(float) [14]
+[45]     0.0    0.00    0.00  997960         cvRound(float) [45]
+-----------------------------------------------
+                0.00    0.00  997960/997960      manualWienerFilter(cv::Mat const&, int) [3]
+[46]     0.0    0.00    0.00  997960         float& cv::Mat::at<float>(int, int) [46]
+-----------------------------------------------
+                0.00    0.00  997960/997960      manualWienerFilter(cv::Mat const&, int) [3]
+[47]     0.0    0.00    0.00  997960         cv::Mat::operator()(cv::Rect_<int> const&) const [47]
+-----------------------------------------------
+                0.00    0.00  997960/997960      manualWienerFilter(cv::Mat const&, int) [3]
+[48]     0.0    0.00    0.00  997960         float const& std::max<float>(float const&, float const&) [48]
+-----------------------------------------------
+                0.00    0.00      10/10          void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [51]
+[49]     0.0    0.00    0.00      10         bool __gnu_cxx::__is_null_pointer<char const>(char const*) [49]
+-----------------------------------------------
+                0.00    0.00      10/10          std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [52]
+[50]     0.0    0.00    0.00      10         std::char_traits<char>::length(char const*) [50]
+-----------------------------------------------
+                0.00    0.00      10/10          std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [52]
+[51]     0.0    0.00    0.00      10         void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [51]
+                0.00    0.00      10/10          bool __gnu_cxx::__is_null_pointer<char const>(char const*) [49]
+                0.00    0.00      10/10          std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [55]
+-----------------------------------------------
+                0.00    0.00      10/10          main [1]
+[52]     0.0    0.00    0.00      10         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [52]
+                0.00    0.00      10/10          std::char_traits<char>::length(char const*) [50]
+                0.00    0.00      10/10          void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [51]
+-----------------------------------------------
+                0.00    0.00      10/10          std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [55]
+[53]     0.0    0.00    0.00      10         std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag) [53]
+-----------------------------------------------
+                0.00    0.00      10/10          std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [55]
+[54]     0.0    0.00    0.00      10         std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&) [54]
+-----------------------------------------------
+                0.00    0.00      10/10          void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [51]
+[55]     0.0    0.00    0.00      10         std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [55]
+                0.00    0.00      10/10          std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&) [54]
+                0.00    0.00      10/10          std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag) [53]
+-----------------------------------------------
+                0.00    0.00       1/3           manualRotate90Clockwise(cv::Mat const&) [20]
+                0.00    0.00       1/3           manualFlipVertical(cv::Mat const&) [19]
+                0.00    0.00       1/3           manualClip(cv::Mat const&) [21]
+[56]     0.0    0.00    0.00       3         cv::Mat::type() const [56]
+-----------------------------------------------
+                0.00    0.00       1/2           cv::operator/=(cv::Mat&, double const&) [59]
+                0.00    0.00       1/2           manualWienerFilter(cv::Mat const&, int) [3]
+[57]     0.0    0.00    0.00       2         cv::_OutputArray::_OutputArray(cv::Mat&) [57]
+                0.00    0.00       2/1995922     cv::_InputArray::_InputArray() [36]
+                0.00    0.00       2/2993893     cv::_InputArray::init(int, void const*) [30]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z15manualGrayscaleRKN2cv3MatE [61]
+[58]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           manualGaussianFilter(cv::Mat const&, int, double) [2]
+[59]     0.0    0.00    0.00       1         cv::operator/=(cv::Mat&, double const&) [59]
+                0.00    0.00       1/2           cv::_OutputArray::_OutputArray(cv::Mat&) [57]
+                0.00    0.00       1/1995922     cv::_OutputArray::~_OutputArray() [37]
+-----------------------------------------------
+                0.00    0.00       1/1           manualFlipVertical(cv::Mat const&) [19]
+[60]     0.0    0.00    0.00       1         cv::MatSize::operator()() const [60]
+                0.00    0.00       1/1995921     cv::Size_<int>::Size_(int, int) [38]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [21] manualClip(cv::Mat const&) [37] cv::_OutputArray::~_OutputArray() [14] unsigned char cv::saturate_cast<unsigned char>(float)
+   [5] manualGrayscale(cv::Mat const&) [33] cv::Vec<unsigned char, 3>& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) [34] unsigned char cv::saturate_cast<unsigned char>(int)
+  [18] manualBrightness(cv::Mat const&, int) [8] double& cv::Mat::at<double>(int, int) [59] cv::operator/=(cv::Mat&, double const&)
+  [17] manualEqualizeHist(cv::Mat const&) [46] float& cv::Mat::at<float>(int, int) [49] bool __gnu_cxx::__is_null_pointer<char const>(char const*)
+  [19] manualFlipVertical(cv::Mat const&) [6] unsigned char& cv::Mat::at<unsigned char>(int, int) [15] cv::Vec<unsigned char, 3> const& cv::Mat::at<cv::Vec<unsigned char, 3> >(int, int) const
+   [3] manualWienerFilter(cv::Mat const&, int) [9] cv::Vec<double, 4>::Vec() [4] unsigned char const& cv::Mat::at<unsigned char>(int, int) const
+   [2] manualGaussianFilter(cv::Mat const&, int, double) [28] cv::Vec<double, 4>::operator[](int) [56] cv::Mat::type() const
+  [20] manualRotate90Clockwise(cv::Mat const&) [42] cv::Vec<unsigned char, 3>::Vec(cv::Vec<unsigned char, 3> const&) [35] cv::Mat::channels() const
+  [58] __static_initialization_and_destruction_0(int, int) [12] cv::Vec<unsigned char, 3>::Vec(unsigned char, unsigned char, unsigned char) [47] cv::Mat::operator()(cv::Rect_<int> const&) const
+   [7] manualHSV(cv::Mat const&) [29] cv::Vec<unsigned char, 3>::operator[](int) [60] cv::MatSize::operator()() const
+  [45] cvRound(float)         [10] cv::Matx<double, 4, 1>::Matx() [50] std::char_traits<char>::length(char const*)
+  [30] cv::_InputArray::init(int, void const*) [43] cv::Matx<unsigned char, 3, 1>::Matx(unsigned char const*) [51] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  [39] cv::_InputArray::init(int, void const*, cv::Size_<int>) [13] cv::Matx<unsigned char, 3, 1>::Matx(unsigned char, unsigned char, unsigned char) [52] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  [44] cv::_InputArray::_InputArray(cv::Mat const&) [16] cv::Rect_<int>::Rect_(int, int, int, int) [53] std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag)
+  [36] cv::_InputArray::_InputArray() [38] cv::Size_<int>::Size_(int, int) [54] std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&)
+  [31] cv::_InputArray::~_InputArray() [32] cv::Size_<int>::Size_() [48] float const& std::max<float>(float const&, float const&)
+  [57] cv::_OutputArray::_OutputArray(cv::Mat&) [41] cv::Size_<int>::operator=(cv::Size_<int> const&) [55] std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*)
+  [40] cv::_OutputArray::_OutputArray<double, 4, 1>(cv::Matx<double, 4, 1>&) [11] cv::Scalar_<double>::Scalar_()

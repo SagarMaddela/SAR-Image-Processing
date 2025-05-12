@@ -1,0 +1,10 @@
+Operation,Execution Time (ms)
+Grayscale Conversion,143.256
+Rotate,38.2604
+Flip,35.19
+HSV Conversion,72.7549
+Brightness Adjustment,57.967
+Image Clipping,70.3477
+Histogram Equalization,51.8047
+Wiener Filtering,1298.84
+Gaussian Filtering,937.926
